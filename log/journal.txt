@@ -3,21 +3,29 @@ Times are approx.
 
 12/17/2016
 6:00pm - Got Package
-7:00pm - Emailed about Error in package
+7:00pm - Emailed about Error in package, Ordered another Phone from Amazon, should be here friday
 7:15pm - Idea
         - Use ssh access to get firmware image and use hint 4 to decode message
-sdfds
-d
-ss
-
-
-
-
-
-
-
-
-
+7:52pm - Data
+	Boot: 1.0.1.1
+	Core: 1.0.2.5
+	Base: 1.0.2.19
+	Proj: 1.0.2.27
+	Locale: 1.0.2.9
+	Recovery: 1.0.2.12
+	MAC: 00:0B:82:7E:67:63
+	HW: V1.4A
+	P/N: 9620006314A
+	
+	IPv4: 192.168.0.16
+	IPv6: 0:0:0:0:206:82ff:fe7e:6763
+	Subnet Mask: 255.255.255.0
+	Gateway: 192.168.0.1
+	DNS1: 208.59.247.45
+	DNS2: 208.59.247.46
+	NTP: us.pool.ntp.org
+	
+	Inital Assesments: What is NTP, possibly reflash w/ JTAG?, check out IPv6 notation
 
 
 
