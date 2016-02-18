@@ -26,6 +26,24 @@ Times are approx.
 	NTP: us.pool.ntp.org
 	
 	Inital Assesments: What is NTP, possibly reflash w/ JTAG?, check out IPv6 notation
-
-
-
+8:00pm
+	PORT 22/tcp open ssh
+	     80/tcp open http
+	Running: Linux 2.6.X|3.x
+	OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+	OS details: Linux 2.6.32 - 3.10
+8:16pm 
+	ssh admin@192.168.0.16 gained access
+		Options: config        - Configure the device
+			 status        - Show device status
+			 ps_status     - Show ps command output
+			 phone_status  - Show current phone basic status
+			 upgrade       - Upgrade the device
+			 reboot        - Reboot the device
+			 reset         - Factory Reset
+			 format mode   - Format user data partition
+				mode 0 - Reset User data
+			 link          - Show Ethernet link status
+			 help          - show this tezt
+			 audiotune     - Start Audio tuning tool 
+			 exit          - Exit command shell
