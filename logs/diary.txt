@@ -1,0 +1,8 @@
+This file will server as the log/journal for the RBS project
+Times are approx.
+
+12/17/2016
+6:00pm - Got Package
+7:00pm - Emailed about Error in package
+7:15pm - Idea
+	- Use ssh access to get firmware image and use hint 4 to decode message
