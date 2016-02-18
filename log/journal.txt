@@ -50,3 +50,9 @@ Times are approx.
 8:24pm - Downloaded Bin File from GrandStream Website (http://www.grandstream.com/support/firmware)
           - Version 1.0.2.27
 8:43pm - Could potentionally get the firmware off of the phone, if it has been mod'd and compare to normal bin file, with binwalk -G
+
+9:00pm - output of binwalk -Y --Identify the CPU architecture of a file using the capstone disassembler
+	263 0x107 CPU - ARM executable code, 16-bit (Thumb), big endian, at least 500 valid instructions
+11:00pm 
+	-ssh uses Dropbear sshd 2013.58 (protocol 2.0) 
+		-known to have different time delays between failed logon attempst to detect what usernames are valid
