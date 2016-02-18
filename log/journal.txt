@@ -56,3 +56,6 @@ Times are approx.
 11:00pm 
 	-ssh uses Dropbear sshd 2013.58 (protocol 2.0) 
 		-known to have different time delays between failed logon attempst to detect what usernames are valid
+12:00am
+	-Get into Linux via ssh to get to root to check out ssh/admin/admin/hlm0mz
+	-Get into Linua via some other method
