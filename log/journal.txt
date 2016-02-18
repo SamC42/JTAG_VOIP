@@ -47,3 +47,5 @@ Times are approx.
 			 help          - show this tezt
 			 audiotune     - Start Audio tuning tool 
 			 exit          - Exit command shell
+8:24pm - Downloaded Bin File from GrandStream Website (http://www.grandstream.com/support/firmware)
+          - Version 1.0.2.27
