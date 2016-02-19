@@ -24,8 +24,8 @@
 
 /* Buffer handling routines, designed to avoid overflows/using invalid data */
 
-#include "includes.h"
-#include "dbutil.h"
+//#include "includes.h"
+//#include "dbutil.h"
 #include "buffer.h"
 
 /* Prevent integer overflows when incrementing buffer position/length.
@@ -154,7 +154,7 @@ void buf_incrpos(buffer* buf,  int incr) {
 unsigned char buf_getbyte(buffer* buf) {
 
 	/* This check is really just ==, but the >= allows us to check for the
-	 * bad case of pos > len, which should _never_ happen. */
+	 * bad case of pos > len, which should _never_ happen. 
 	if (buf->pos >= buf->len) {
 		dropbear_exit("Bad buf_getbyte");
 	}

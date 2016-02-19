@@ -1,3 +1,4 @@
+
 /*#Need:
 
 buffer
@@ -11,6 +12,9 @@ buf_resize
 
 
 */
+
+#include "packet.h"
+#include "zlib.h"
 #define ZLIB_COMPRESS_EXPANSION (((RECV_MAX_PAYLOAD_LEN/16384)+1)*5 + 6)
 #define ZLIB_DECOMPRESS_INCR 1024
 //#ifndef DISABLE_ZLIB
