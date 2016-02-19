@@ -1,3 +1,1 @@
-# Nmap 7.01SVN scan initiated Wed Feb 17 20:06:18 2016 as: nmap -o 192.168.0.16
-WARNING: No targets were specified, so 0 hosts scanned.
-# Nmap done at Wed Feb 17 20:06:18 2016 -- 0 IP addresses (0 hosts up) scanned in 0.05 seconds
+This is a test file for sending via SCP to Phone
