@@ -64,3 +64,21 @@ Times are approx.
 	CVE - 2013 - 4421 which states 'Error in buf_decompress when handling compressed payloads can be exploited to exhaust
 			                available memory resources by sending a speically crafted packet.
 	- Plan is to download dropbear ssh version .58 and .59 and attempt to exploit compression packet error
+12/19/2016
+7:19am - Plan is to read into scp/ssh/dropbear to learn as much as possible to exploit
+		CVE -2013 - 4421
+	Dropbear - 
+		- pty = pseudo-teletype - device
+		- scp on dropbear need to install (looks like phone has it )
+		- packet.c/line370 
+			- buf_decompress(buf,len) = decompress payload, resize output buffer
+				- uses zlib.net/zlib_tech.html
+					- compression method, ecapsulates DEFALTE data by adding a header & trailer
+8:00am - Broke out buf_decompress from packet.c to test buffer vulnerability
+		- Assumptions - the buffer refered to is what is being taken in from ssh & w/ the vulnerabilty it will
+				dump me out of the gradstream shell
+					- don't use -T
+                              - also to note the vul. only states that it can create a DOS but hopefully that will do the trick
+					
+		- expected results - it will all me to run code on the device
+		
