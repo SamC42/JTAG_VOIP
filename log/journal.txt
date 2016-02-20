@@ -89,3 +89,6 @@ Times are approx.
 9:00pm
 	- Attempting to get in via a serial port
 	- Also trying to look at maintenance mode somewhere on the machine
+	- DRAM = Zentel A353%%40GTP
+	- Processor ARM 926 
+	- SoC = DVF9918 
