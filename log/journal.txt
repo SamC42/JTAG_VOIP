@@ -82,3 +82,10 @@ Times are approx.
 					
 		- expected results - it will all me to run code on the device
 		
+7:30pm
+	- Stopped trying to decompress packet.c
+	- tried a bit of brute force, going to look into why root@ for ssh stops at one password attempt
+	- heredoc tried
+9:00pm
+	- Attempting to get in via a serial port
+	- Also trying to look at maintenance mode somewhere on the machine
