@@ -15,8 +15,10 @@ buf_resize
 
 #include "packet.h"
 #include "zlib.h"
+//#include "session.h"
 #define ZLIB_COMPRESS_EXPANSION (((RECV_MAX_PAYLOAD_LEN/16384)+1)*5 + 6)
 #define ZLIB_DECOMPRESS_INCR 1024
+#define RECV_MAX_PAYLOAD_LEN 32768
 //#ifndef DISABLE_ZLIB
 static buffer* buf_decompress(buffer* buf, unsigned int len);
 static void buf_compress(buffer * dest, buffer * src, unsigned int len);
@@ -48,7 +50,8 @@ static buffer* buf_decompress(buffer* buf, unsigned int len) {
 		buf_setpos(ret, ret->len);
 
 		if (result != Z_BUF_ERROR && result != Z_OK) {
-			dropbear_exit("zlib error");
+			printf("zlib error");
+			return 0;
 		}
 
 		if (zstream->avail_in == 0 &&
@@ -63,7 +66,8 @@ static buffer* buf_decompress(buffer* buf, unsigned int len) {
 			if (ret->size >= RECV_MAX_PAYLOAD_LEN) {
 				/* Already been increased as large as it can go,
 				 * yet didn't finish up the decompression */
-				dropbear_exit("bad packet, oversized decompressed");
+				printf("bad packet, oversized decompressed");
+				return 0;
 			}
 			new_size = MIN(RECV_MAX_PAYLOAD_LEN, ret->size + ZLIB_DECOMPRESS_INCR);
 			ret = buf_resize(ret, new_size);
