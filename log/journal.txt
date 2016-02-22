@@ -104,3 +104,10 @@ Times are approx.
 	- Debug - JTAG-based debug port for both CPU's 
 		- CoreSight w/ Embedded Trace Macrocell 
 		- Maybe the pinout is a JTAG debug port
+10:00am
+	- Attempting to comm w/ I2C on breakout pins
+	- Looks like the port is a JTAG supported port because I got
+		at least 0.5v from VCC to the pin 10 (hard gnd)
+3:00pm
+	- Got a Raspberry Pi and attempting to make a JTAG debugger
+	
