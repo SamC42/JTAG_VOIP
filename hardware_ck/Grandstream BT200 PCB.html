@@ -1,0 +1,1076 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0073)http://reverse.0cpm.org/grandstream/pcb-bt200.html#occurrence-of-this-pcb -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" class="gr__reverse_0cpm_org"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="generator" content="Docutils 0.4: http://docutils.sourceforge.net/">
+<title>Grandstream BT200 PCB</title>
+<style type="text/css">
+
+/*
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date$
+:Revision: $Revision$
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin-left: 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left {
+  clear: left }
+
+img.align-right {
+  clear: right }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font-family: serif ;
+  font-size: 100% }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em ;
+  background-color: #eeeeee }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+tt.docutils {
+  background-color: #eeeeee }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style><style type="text/css"></style>
+</head>
+<body data-gr-c-s-loaded="true">
+<div class="document" id="grandstream-bt200-pcb">
+<h1 class="title">Grandstream BT200 PCB</h1>
+<p><strong>DSP processor, 2 MB Flash, 4 MB RAM, network, optional switch</strong></p>
+<img align="right" alt="BudgeTone general appearance; variations with 1 or 2 network ports." class="align-right" src="./Grandstream BT200 PCB_files/budgetone.png">
+<div class="contents topic">
+<p class="topic-title first"><a id="contents" name="contents">Contents</a></p>
+<ul class="simple">
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#occurrence-of-this-pcb" id="id1" name="id1">Occurrence of this PCB</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#components-found" id="id2" name="id2">Components found</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#connectors-found" id="id3" name="id3">Connectors found</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#on-board-chip-addressing" id="id4" name="id4">On-board chip addressing</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#sdram-setup" id="id5" name="id5">SDRAM setup</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#network-chip-connections" id="id6" name="id6">Network chip connections</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#clock-regime" id="id7" name="id7">Clock regime</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#dma-regime" id="id8" name="id8">DMA regime</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#sound-codec-connections" id="id9" name="id9">Sound codec connections</a></li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#sound-codec-registers" id="id10" name="id10">Sound codec registers</a></li>
+</ul>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id1" id="occurrence-of-this-pcb" name="occurrence-of-this-pcb">Occurrence of this PCB</a></h1>
+<p>The BT200 PCB is used in the following device models:</p>
+<ul class="simple">
+<li>BudgeTone 200 (2 network ports due to switch)</li>
+<li>BudgeTone 201 (1 network port)</li>
+</ul>
+<p>This manufacturer also produces <a class="reference" href="http://reverse.0cpm.org/grandstream/index.html">other models</a>.</p>
+<p>These devices are RoHS replacements for <a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt102.html">BT102 boards</a>.
+The older BudgeTone models also have less memory to work with, which makes them a
+more suitable low-end model to consider for open telephony applications than
+the already more advanced BT200 models.  Results will carry over easily, due to
+the similarity in hardware, and the larger models will then simply be able to
+take in more extra options.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id2" id="components-found" name="components-found">Components found</a></h1>
+<ul>
+<li><p class="first">DSP system-on-chip: Covered in paint.  This is a <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/TMS320VC5501.pdf">TMS320VC5501PGF</a>.
+Note that it is another family (tic55x instead of tic54x) of DSP-processors than
+on the <a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt102.html">BT102 boards</a>.</p>
+</li>
+<li><p class="first">A second (important?) chip mysteriously hidden under paint.
+The most likely candidate is the same one as found in the GXP-2020 model:
+A coprocessor <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/TLV320AIC20K.pdf">TLV320AIC20K</a> from Texas Instruments interfaces speaker,
+microphone and line in/out to the DSP over I2C or S2C.  It includes
+support for oversampling and filtering.</p>
+</li>
+<li><p class="first">Flash memory: 1M x 16, or 2M x 8: <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/EN29LV160.pdf">EN29LV160AB-70TCP</a>.
+The cycle speed is 70 ns, making this flash suitable for
+running code directly.  This means that smaller RAM will do.</p>
+</li>
+<li><p class="first">SDRAM: 2048k x 16, or 4096k x 8: 2x <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/W9816G6CH.pdf">W9816G6CH-6</a>.  Supports speeds
+up to 166 Mhz.  The chips are active at the same time and for the same
+addresses, but serve other bits on the data bus.</p>
+</li>
+<li><p class="first">Ethernet: <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/rtl8019as.pdf">RTL8019AS</a>, an NE2000 clone,
+albeit a bad one according to the Linux kernel.  It does not really
+matter; at least example code is available in that kernel, and
+actually <a class="reference" href="http://www.sics.se/~adam/uip/index.php/Main_Page">uIP</a> and a lot of other software has already been <a class="reference" href="http://www.sics.se/~adam/uip/index.php/Ports">ported</a> to
+these chips before.</p>
+<p>Newer models use the <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/KSZ8842MQL.pdf">KSZ8842MQL</a> chip instead.  This chip is better
+suited towards IPv6, it supports 100 Mb/s networks and includes a
+switch with 2 external connections.</p>
+</li>
+<li><p class="first">Switch: <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/RTL8035SC.pdf">RTL8035SC</a> with support for 5 ports, with up to 2 MII ports.
+It would seem that the DSP processor needn't concern itself with
+passing traffic between the LAN and WAN interfaces.  It is even
+possible that the DSP processor is fully unaware of any network
+hardware other than the main ethernet device.</p>
+</li>
+<li><p class="first">Ethernet + Switch: Recent BT200 models seem to have switched to
+the combined 3-way ethernet chip Micrel <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/KSZ8842MQL.pdf">KS8842-16MQL</a>.</p>
+</li>
+</ul>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id3" id="connectors-found" name="connectors-found">Connectors found</a></h1>
+<p>These are described <a class="reference" href="http://reverse.0cpm.org/grandstream/connect.html">centrally</a> in more detail:</p>
+<ul class="simple">
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/connect.html#BT102J401">J401</a> is a JTAG connector</li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/connect.html#BT102J402">J402</a> is an I2C connector</li>
+<li><a class="reference" href="http://reverse.0cpm.org/grandstream/connect.html#BT102J403">J403</a> connects to I/O peripherals: speaker, LCD, keyboard, LEDs.
+The peripherals are the same as used for <a class="reference" href="http://reverse.0cpm.org/grandstream/pcb-bt102.html">BT102 boards</a>.</li>
+</ul>
+<p>The JTAG connector used in these GrandStream phones is a 14-pin connector.
+Its solder islands are open on the PCB, so soldering in a 0.1" pitched
+two-row pin header is easy.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id4" id="on-board-chip-addressing" name="on-board-chip-addressing">On-board chip addressing</a></h1>
+<p>The DSP chip has 4 address areas, each linked to a CEn output.
+This makes it straightforward to select I/O hardware.  The following
+scheme is used for BT200 phones:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%">
+<col width="20%">
+<col width="20%">
+<col width="7%">
+<col width="50%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">pin</th>
+<th class="head">external addresses</th>
+<th class="head">wired functions</th>
+<th class="head">mode</th>
+<th class="head">internal addresses</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>/CE0</td>
+<td>0x010000..0x3fffff</td>
+<td>Network</td>
+<td>32 bit</td>
+<td>0x012340..0x01234f (uint16_t at odd addresses)</td>
+</tr>
+<tr><td>/CE1</td>
+<td>0x400000..0x7fffff</td>
+<td>Flash</td>
+<td>16 bit</td>
+<td>0x200000..0x2fffff</td>
+</tr>
+<tr><td>/CE2</td>
+<td>0x800000..0xbfffff</td>
+<td>SDRAM</td>
+<td>32 bit</td>
+<td>0x400000..0x4fffff TODO:all/half?</td>
+</tr>
+<tr><td>/CE3</td>
+<td>0xc00000..0xff7fff</td>
+<td>8x D-FF to kbd/lcd</td>
+<td>16 bit</td>
+<td>0x666666</td>
+</tr>
+</tbody>
+</table>
+<p>The external addresses are 8-bit addresses, whereas the actual addresses may be shifted up to
+accommodate their addressing mode.  This is why a multiple of the actual address can fall into
+the external address range.</p>
+<ul class="simple">
+<li>The /CE0 space has a network chip that listens for address 0x0300 on a 16-bit address
+bus.  So, even though the actual address 0x0300 is not part of external /CE0 space,
+the chip can be addressed in another 64 kB block.</li>
+<li>The /CE1 space must contain the flash for this DSP, if it is to boot from it.
+The bootloader is instructed with a few external pin states during reset to do
+this on a BT200.  The space could contain twice the amount of flash, which is
+indeed done on larger phones based on this DSP.</li>
+<li>The /CE2 space is completely filled with SDRAM.</li>
+<li>The /CE3 space is fully filled with an 8-bit D-flipflop.  When writing bytes to it, it will
+show glitches due to the high end of a 16-bit word being written with zero, so the firmware
+will write double byte values, like 0x3a3a and 0f6f6.  This resolves glitches.</li>
+</ul>
+<p>Since the configuration of these spaces is kind of complex, I decided to dump the start of
+the Flash from the address that the bootloader wants to get to.  This yields a list of port
+settings that are made initially:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="10%">
+<col width="11%">
+<col width="79%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Register</th>
+<th class="head">Value set</th>
+<th class="head">Documentation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>PLLCSR</td>
+<td>0x0000</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>EGCR1</td>
+<td>0xff7f</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>EGCR2</td>
+<td>0x0009</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE0_1</td>
+<td>0x3f2f</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE0_2</td>
+<td>0xffff</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE1_1</td>
+<td>0x0922</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE1_2</td>
+<td>0x31f2</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE2_1</td>
+<td>0xff37</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE2_2</td>
+<td><em>unset</em></td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE3_1</td>
+<td>0x0220</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CE3_2</td>
+<td>0x0270</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>SDC1</td>
+<td>0x6ffe</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>SDC2</td>
+<td>0x8712</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>SDRC1</td>
+<td>0xf5dc</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>SDRC2</td>
+<td>0xffff</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>SDX1</td>
+<td>0xb809</td>
+<td>&nbsp;</td>
+</tr>
+<tr><td>CESCR1</td>
+<td>0xfffc</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Between most of these register updates, there is a 5-cycle wait; at the end, there
+is a 50-cycle wait.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id5" id="sdram-setup" name="sdram-setup">SDRAM setup</a></h1>
+<p>The SDRAM W9816G6 has 2 banks, 11 row address bits (A10..A0), 8 column address bits (A7..A0)
+and a bus width of 16 bits.  There are two such chips, totalling 32 bits.</p>
+<p>The entire memory therefore comprises of 2 * 2^11 * 2^8 words of 32 bits, or
+a million 32 bit words, or 4 megabytes of memory.</p>
+<p>(Is this correct?!?  The banks are also an address bit?  Or is A0 meaningless for 16 bit mode?
+The chips are 2 banks * 512 k * 16 bit each.)</p>
+<p>See above for the actual values that make it all work nicely.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id6" id="network-chip-connections" name="network-chip-connections">Network chip connections</a></h1>
+<p>The following table shows how the network chip KSZ8842-16 is connected to the DSP
+and to fixed signals:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="15%">
+<col width="85%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">KSZ8842-16</th>
+<th class="head">Routed to TMS320VC5501PGF or fixed signal</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>AEN</td>
+<td>EMIF./CE0</td>
+</tr>
+<tr><td>ADSN</td>
+<td>GND</td>
+</tr>
+<tr><td>ARDY</td>
+<td>EMIF.ARDY</td>
+</tr>
+<tr><td>BE0N</td>
+<td>EMIF./BE0</td>
+</tr>
+<tr><td>BE1N</td>
+<td>EMIF./BE1</td>
+</tr>
+<tr><td>A15..A10</td>
+<td>GND (0x0030 to 0x003f)</td>
+</tr>
+<tr><td>A9..A8</td>
+<td>Vcc (0x0030 to 0x003f)</td>
+</tr>
+<tr><td>A7..A4</td>
+<td>GND (0x0030 to 0x003f)</td>
+</tr>
+<tr><td>A3..A1</td>
+<td>A4..A2 (connects shift-up in 16-bit async EMIF mode)</td>
+</tr>
+<tr><td>EEEN</td>
+<td>GND (no EEPROM)</td>
+</tr>
+<tr><td>EEDI</td>
+<td>Vcc (mode 16-bit)</td>
+</tr>
+<tr><td>INTRN</td>
+<td>/INT0</td>
+</tr>
+</tbody>
+</table>
+<p>The network chip is not configured from EEPROM, so the MAC address must be assigned
+by the firmware.  The network chip is configured as a 16-bit device, using the EMIF
+/BE0 and /BE1 signals to select the lower and/or higher parts of a word.</p>
+<p>Note how the address is hardwired to its default range, 0x0300 to 0x030f by fixed
+values for A15..A4.  The only address bits that actually select an address are the
+A3..A1 bits.  Due to this, the ethernet chip is omnipresent in its /CE0 space.</p>
+<p>When scanning for this chip's presence... I sent 0xffff to each word in the /CE0
+space, and looked where it popped up.  I never realised that my first actual,
+writing to register 0x0 or BAR, was to change the address to 0xffff making it
+unreachable, in light of the fixed wiring of most of the address lines.  Doh!</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id7" id="clock-regime" name="clock-regime">Clock regime</a></h1>
+<p>Following is how we define the clock signals of the BT200 phone.</p>
+<ul class="simple">
+<li>The <strong>crystal</strong> attached to the DSP oscillates at 16,384 MHz.</li>
+<li>This frequency is divided by 1, by not setting PLLDIV0.</li>
+<li>Subsequently, the <strong>PLL</strong> multiplies the frequency by 15, so the
+clock is increased to 245.76 MHz.</li>
+<li>In <strong>low-power</strong> mode, when there is no work to do except a bit
+of keyboard scanning and awaiting interrupts, we may actually
+lower these frequencies by (1) switching off the PLL, and
+(2) setting PLLDIV0 to 4.  That would lead to an internal
+frequency of 4.096 MHz, which is still comfortably high.</li>
+<li>The <strong>DSP core clock</strong> is the output frequency of the PLL, which is
+the default setup in CK3SEL when the PLL is enabled.   This makes
+the DSP core clock run at 245.76 MHz in active mode.  This is an
+interestingly high frequency, as it may be sufficient to decode
+MP3, Vorbis and AAC streams!  This would permit an on-hook phone
+function of listening to online radio or DVB-over-ethernet streams.</li>
+<li>The <strong>fast peripherals clock</strong> SYSCLK1 is derived from the PLL output
+after division by 2; the resulting clock is 122.88 MHz.</li>
+<li>The <strong>slow peripherals clock</strong> SYSCLK2 is derived from the PLL output
+after division by 4; the resulting clock is 61.44 MHz.</li>
+<li>The <strong>CLKG clock</strong> of the sample rate generator (see spru592e, section 3)
+is derived from SYSCLK2 through division by 5; the resulting clock is
+12.288 MHz, which the codec will use to process samples in "turbo mode".
+This signal is output to the SCLK port (see codec connections below).</li>
+<li>The <strong>FSG clock</strong> of the sample rage generator (see spru592e, section 3)
+is derived from the CLKG clock through division by (FPER+1).  This one
+depends on the target frequency, see below.  The signal is output
+to the FS pin of the DSP (see codec connections below).</li>
+<li>The <strong>I2C clock</strong> is derived from the slow peripherals clock by
+prescaling SYSCLK2 through I2CPSC for division by 6; the resulting
+clock is 10.24 MHz.</li>
+<li>The <strong>I2C low time</strong> and <strong>I2C high time</strong> are set to support 100 kHz
+operation on the I2C bus.</li>
+</ul>
+<p>To support various sample rates, the proper division value should be set
+in FPER:</p>
+<blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%">
+<col width="13%">
+<col width="16%">
+<col width="20%">
+<col width="33%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"><strong>Sample rate</strong></th>
+<th class="head"><strong>RFC3551</strong></th>
+<th class="head"><strong>Divide by</strong></th>
+<th class="head"><strong>FPER setting</strong></th>
+<th class="head"><strong>Codecs</strong></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>8000 Hz</td>
+<td>Yes</td>
+<td>1536</td>
+<td>1535</td>
+<td>G.7xx, GSM, iLBC, L16, ...</td>
+</tr>
+<tr><td>11025 Hz</td>
+<td>Yes</td>
+<td>1114,5578...</td>
+<td>1113 or 1114</td>
+<td>L16, ...</td>
+</tr>
+<tr><td>16000 Hz</td>
+<td>Yes</td>
+<td>768</td>
+<td>767</td>
+<td>G.722, G.722.1, L16</td>
+</tr>
+<tr><td>22050 Hz</td>
+<td>Yes</td>
+<td>557,27891...</td>
+<td>556 or 557</td>
+<td>L16</td>
+</tr>
+<tr><td>32000 Hz</td>
+<td>Yes</td>
+<td>384</td>
+<td>383</td>
+<td>L16, ?</td>
+</tr>
+<tr><td>44100 Hz</td>
+<td>Yes</td>
+<td>278,63946...</td>
+<td>277 or 278</td>
+<td>AAC, MP3, Vorbis, CD, L16</td>
+</tr>
+<tr><td>48000 Hz</td>
+<td>Yes</td>
+<td>256</td>
+<td>255</td>
+<td>AAC, MP3, Vorbis, DAT, L16</td>
+</tr>
+<tr><td>96000 Hz</td>
+<td>No</td>
+<td>128</td>
+<td>127</td>
+<td>AAC</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Note that 44100 Hz, the CD sample rate and also a popular MP3 and Vorbis
+sample rate, is a bit of a nuisance; it is the multiplication of squares
+of the first four prime numbers (2*2*3*3*5*5*7*7 = 44100) which looks like a
+nerdy form of fun, but it actually makes generating this rate extremely
+difficult.  The frequencies involved in the DSP's clock rate includes many
+powers of 2 and 5, and the PLL could even introduce 3*3 or 7, but there is
+no way to factor in 3*3*7*7 with the PLL.  In other words, we cannot derive
+an accurate 44100 Hz sample rate from this architecture.</p>
+<p>The McBSP structures in the DSP have an ability to repeat the last sample
+if it is not handed one in time, which probably is a reasonable solution
+for problems like these.  By rounding down the value in FPER, this would
+automatically be triggered.  For CD sample rates, the inserted extra sample
+would only be done for 0,36% of the samples.  For lower sample rates, the
+error percentage is even less.</p>
+<p>The L16 codec entries refer to RFC 3551, which prescribes a number of
+audio formats to transmit over RTP.  Other formats that also support
+variable bitrates are equally possible, but less likely: L8, PCMA, PCMU.
+One additional function that a phone could perform is playing such
+samples; L16 is the most likely candidate to be doing that.  RTP might
+be multicasted on a LAN, from another phone or from a desktop running
+a suitable bit of software (like <a class="reference" href="http://pulseaudio.org/">PulseAudio</a> doing RTP Multicast in
+<tt class="docutils literal"><span class="pre">s16ne</span></tt> or <tt class="docutils literal"><span class="pre">s16be</span></tt> mode, or <a class="reference" href="http://gstreamer.freedesktop.org/">gstreamer</a> using its <tt class="docutils literal"><span class="pre">rtpL16pay</span></tt>
+module).</p>
+<p>There is one more constraint however.  It is rather clumsy: the codec
+itself divides the MCLK signal of 12,288 MHz internally, by a product
+of factors 128.M.N.P where P is 1 or 8, M=1..128 and N=1..16.  This is
+used to achieve an oversampled clock rate for its filters.  Interestingly,
+the design does include a PLL, but it has not been used for this purpose.
+Don't ask me why...  anyhow, the resulting constraints means that factors
+M, N and P must be determined.  In practice, P=1 is the only useful setting
+for that factor, but the others can be manipulated:</p>
+<blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%">
+<col width="23%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+<col width="13%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head"><strong>Sample rate</strong></th>
+<th class="head">128.M.N.P</th>
+<th class="head">M</th>
+<th class="head">N</th>
+<th class="head">P</th>
+<th class="head">OSR</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>8000 Hz</td>
+<td>1536</td>
+<td>12</td>
+<td>1</td>
+<td>1</td>
+<td>512</td>
+</tr>
+<tr><td>11025 Hz</td>
+<td>1114,5578...</td>
+<td>9...</td>
+<td>1</td>
+<td>1</td>
+<td>128</td>
+</tr>
+<tr><td>16000 Hz</td>
+<td>768</td>
+<td>6</td>
+<td>1</td>
+<td>1</td>
+<td>256</td>
+</tr>
+<tr><td>22050 Hz</td>
+<td>557,27891...</td>
+<td>5...</td>
+<td>1</td>
+<td>1</td>
+<td>128</td>
+</tr>
+<tr><td>32000 Hz</td>
+<td>384</td>
+<td>3/pass</td>
+<td>1/thru</td>
+<td>1</td>
+<td>128</td>
+</tr>
+<tr><td>44100 Hz</td>
+<td>278,63946...</td>
+<td>pass</td>
+<td>thru</td>
+<td>1</td>
+<td>128</td>
+</tr>
+<tr><td>48000 Hz</td>
+<td>256</td>
+<td>pass</td>
+<td>thru</td>
+<td>1</td>
+<td>128</td>
+</tr>
+<tr><td>96000 Hz</td>
+<td>128</td>
+<td>pass</td>
+<td>thru</td>
+<td>1</td>
+<td>128</td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Note that N adds nothing, because the factors are small enough to always
+fit inside M.  The dotted values are inaccurate, and hoped not to confuse
+playback too much.  The pass/thru values are another matter; the filters
+can be switched off for those, so no oversampling rate has to be generated.
+(TODO: But does it actually work that way in this confused codec design?)</p>
+<p>The oversampling rate OSR can be set to 128, 256 or 512; the table
+indicates the highest setting, thus the one yielding the best audio
+quality, possible for the given values.  This does not exceed the
+advised maximum values from the datasheet, and it has one (for 256)
+or two (for 512) low-value bits in M set to zero.</p>
+<p>One point of attention however, is that the 32 kHz sample rate should
+use a filter to remove frequency components above the 16 kHz Nyquist
+frequency, but that the codec cannot perform up to that level.  For
+that reason, the filters have to be bypassed and it is to be hoped that
+the speakers used won't be able to render such high frequencies at any
+audible level.  This renders the TLV320AIC2x codecs unsuitable for
+general purpose HiFi rendering -- which is acceptable for a normal phone,
+but is likely to render the chip useless for future designs based on
+the 0cpm Firmerare.  (Note however, that an AC'97 codec can also be
+driver from an McBSP link.)</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id8" id="dma-regime" name="dma-regime">DMA regime</a></h1>
+<p>To get a very consistent rate for audio, we have it arranged by DMA.
+Channel 0 plays samples from a sample buffer out to the sound codec,
+channel 1 records what comes back from it.</p>
+<p>The FS clock described above gives the timing for the McBSP1 serial
+port connected to the codec chip, and DMA channels 0 and 1 are
+synchronised to the McBSP1 transmit and read events, respectively.</p>
+<p>The DMA is continuously running over the sample buffer, at least
+in theory.  In practice, it detects once every 64 samples if there
+are enough samples to continue, and if not, that channel stops.
+As soon as new samples are injected, DMA is (re)started.  After
+boot, the sample buffer is empty, so the DMA channels is prepared
+but not yet started.</p>
+<p>While copying data from (usually) RTP to the sample buffer, any
+translation scheme can be employed, like from G.726 / ADPCM to
+16-bit samples.  This translation is done by the bottom, and
+may therefore involve assembler code or even hardware support.
+So, on platforms that have MP3, Vorbis or AAC decoding abilities,
+or perhaps in some future even support for MPEG2, MP4 and Theora,
+this is where these facilities are put to use.  It could prove
+to be a good idea to build Vorbis/Theora encoding into a
+high-end phone for meeting rooms, especially because stereo
+effects can be really helpful to position "the others" on the
+other side of a table.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id9" id="sound-codec-connections" name="sound-codec-connections">Sound codec connections</a></h1>
+<p>The following table shows how the codec (sound) chip is connected to the DSP.  It is
+probably the <a class="reference" href="http://reverse.0cpm.org/grandstream/datasheet/TLV320AIC20K.pdf">TLV320AIC20K</a> which is also used in other models by Grandstream; all
+assumptions based on that seem to work out fine.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="14%">
+<col width="86%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">TLV320AIC2x</th>
+<th class="head">Routed to TMS320VC5501PGF or fixed signal</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>MCLK</td>
+<td>ECLKOUT2 (24.576 MHz under original firmware)</td>
+</tr>
+<tr><td>SCLK</td>
+<td>CLKR1, CLKX1 (12.288 MHz under original firmware)</td>
+</tr>
+<tr><td>FS</td>
+<td>FSR1, FSX1</td>
+</tr>
+<tr><td>DIN</td>
+<td>DX1</td>
+</tr>
+<tr><td>DOUT</td>
+<td>DR1</td>
+</tr>
+<tr><td>M/S</td>
+<td>Low, so: stand-alone slave mode</td>
+</tr>
+<tr><td>/PRWDWN</td>
+<td>High, so: use software power down</td>
+</tr>
+<tr><td>/RESET</td>
+<td>GPIO7 -- took me ages to discover why the Codec was not listening!</td>
+</tr>
+<tr><td>SDA</td>
+<td>SDA</td>
+</tr>
+<tr><td>SCL</td>
+<td>SCL</td>
+</tr>
+<tr><td>MICBIAS</td>
+<td>Provides 2.35 Volt</td>
+</tr>
+</tbody>
+</table>
+<p>Clearly, the I2C facility can be used to instruct the codec without interfering
+with the data stream.  That means that it is not necessary to resolve to other
+funny ways that the codec chip offers for control.  In other words, the McBSP1
+interface to which it connects can be solely used for the exchange of samples.</p>
+<p>The high frequency from ECLKOUT2 causes the codec to operate in turbo mode,
+where the sample data is swiftly exchanged after an FS dropping edge, followed
+by high-impedance silence on the line.  Indeed, scope images show a sharp burst
+of activity at regular intervals, followed by an exponential curve for the
+remainder of the sample period.  That was a bit strange to experience on a
+digital line and is good to have explained ;-)</p>
+<div class="figure">
+<img alt="codecexp.png" src="./Grandstream BT200 PCB_files/codecexp.png">
+<p class="caption">This is really confusing at first --the exponential forms should not
+appear on a digital line-- but it is the result of the high impedance
+state that both ends of these serial data lines end in when they have
+exchanged the bits for a sample period.  As can be seen, the last bit
+exchanged can be a 1 or 0, influencing the result.</p>
+</div>
+<div class="figure">
+<img alt="codecbin.png" src="./Grandstream BT200 PCB_files/codecbin.png">
+<p class="caption">Zooming in on the previous measurement's time, the shapes make a lot
+more sense to our square eyes.  Clearly, some bits are exchanged and
+then the line is left to its own devices, causing the exponential
+drop shown above.  Clearly, turbo mode is used to exchange a single
+sample of 16 bits in just a small portion of the sample period.</p>
+</div>
+<div class="figure">
+<img alt="dxr_a5cf.png" src="./Grandstream BT200 PCB_files/dxr_a5cf.png">
+<p class="caption">I couldn't resist this "birth announcement" where, after incredibly
+long fights with the system, I finally manage to get the information
+clocked out as I want them to.  This is the pattern 0xa5cf being
+shown clearly (binary that is 1010010111001111).  Note how the start
+of this signal has fallen to halfway the supply voltage as a result
+of a digital line that floated before this bitstream was sent.</p>
+</div>
+<div class="figure">
+<img alt="fssctruc.png" src="./Grandstream BT200 PCB_files/fssctruc.png">
+<p class="caption">Here's a really dirty trick -- a way to test if a line is
+high-impedance at the proper times.  This is the FS signal (the
+high peak) on the codec short-circuited with the next pin, with
+the DIN signal.  As you can see, FS shows full power, so it is not
+pulled down by the low state of DIN; but the low state of FS does
+pull the voltage of DIN down to half its value.  In other words,
+DIN is high impedance while FS occurs, which is how it should be.
+(Earlier models, like during the previous picture, had an FS that
+was wider and that would show trouble.)  As this is a deliberate
+short-circuit, it is highly abusive; but it occurs when you are
+measuring a lot, and it's good to recognise a valuable pattern
+when you see one.</p>
+</div>
+<p>Even though this looks strange, it is actually proper engineering -- this
+is done to turn the serial connection into a sort of bus, where multiple
+codecs can be connected to one serial line and each gets their own time
+slot.  The frame sync starts off the first codec which will, as soon as it
+is done, pass a delayed frame sync to the next codec, and so on.  This can
+only be done when the codecs are using high impedance modes while another
+codec is (or may be) using the bus.</p>
+<p>The codec won't generate its own SCLK signal, because it is setup as a slave.  The generation
+of this signal has to be done by the DSP, which can use the McBSP-builtin sample rate generator
+to clock out CLKX1 or CLKR1, receive the other, and do the same with FSX1 and FSR1.</p>
+</div>
+<div class="section">
+<h1><a class="toc-backref" href="http://reverse.0cpm.org/grandstream/pcb-bt200.html#id10" id="sound-codec-registers" name="sound-codec-registers">Sound codec registers</a></h1>
+<p>The BT200 only uses channel 0 of the codec.  The registers in channel 1 are
+kept to the following settings:</p>
+<pre class="literal-block">1A=49 2A=a0 3A=01 3B=40 3C=88 3D=ff 4A=90 5A=00 5B=40 5C=bf 5D=c0 6A=00 6B=80
+</pre>
+<p>The settings of the other registers is mostly constant:</p>
+<pre class="literal-block">1A=49 2A=a0 3A=01 3B=40 3C=8a 3D=ff 4A=90 5A=** 5B=** 5C=bf 5D=c0 6A=** 6B=**
+</pre>
+<p>The values starred above differ, however:</p>
+<blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="20%">
+<col width="11%">
+<col width="69%">
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Mode</th>
+<th class="head">Register</th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td>On-hook</td>
+<td>5A</td>
+<td>ADC gain, meaningless, <tt class="docutils literal"><span class="pre">1f</span></tt></td>
+</tr>
+<tr><td>On-hook</td>
+<td>5B</td>
+<td>DAC gain, meaningless, <tt class="docutils literal"><span class="pre">5e</span></tt></td>
+</tr>
+<tr><td>On-hook</td>
+<td>6A</td>
+<td>Input from handset, <tt class="docutils literal"><span class="pre">02</span></tt></td>
+</tr>
+<tr><td>On-hook</td>
+<td>6B</td>
+<td>Output to handset, <tt class="docutils literal"><span class="pre">a2</span></tt></td>
+</tr>
+<tr><td>Off-hook</td>
+<td>5A</td>
+<td>ADC gain, variable, found <tt class="docutils literal"><span class="pre">0c</span></tt></td>
+</tr>
+<tr><td>Off-hook</td>
+<td>5B</td>
+<td>DAC gain, variable</td>
+</tr>
+<tr><td>Off-hook</td>
+<td>6A</td>
+<td>Input from handset, <tt class="docutils literal"><span class="pre">02</span></tt></td>
+</tr>
+<tr><td>Off-hook</td>
+<td>6B</td>
+<td>Output to handset, <tt class="docutils literal"><span class="pre">92</span></tt></td>
+</tr>
+<tr><td>Speakerphone</td>
+<td>5A</td>
+<td>ADC gain, variable, found <tt class="docutils literal"><span class="pre">17</span></tt>, <tt class="docutils literal"><span class="pre">19</span></tt></td>
+</tr>
+<tr><td>Speakerphone</td>
+<td>5B</td>
+<td>DAC gain, variable</td>
+</tr>
+<tr><td>Speakerphone</td>
+<td>6A</td>
+<td>Input from microphone, <tt class="docutils literal"><span class="pre">01</span></tt></td>
+</tr>
+<tr><td>Speakerphone</td>
+<td>6B</td>
+<td>Output to headset, <tt class="docutils literal"><span class="pre">81</span></tt></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<p>Values like these can be set.  For instance:</p>
+<pre class="literal-block">bash$ bin/i2cp/aic2x-setup /dev/i2c-2 0x40 4A=0x32 4B=0x90
+</pre>
+<p>The command parameters have the following meaning:</p>
+<ul class="simple">
+<li>Device <tt class="docutils literal"><span class="pre">/dev/i2c-2</span></tt> is the second I2C bus, and may be different on your system</li>
+<li>Chip-address 0x40 is channel 0, at the usual slave address offset 0x40</li>
+<li>Register 4A is set to 0x32, register 4B is set to 0x90, the others stay unchanged</li>
+</ul>
+<p>This example may be a bit surprising; but the values of M, N and P are really
+stored in separate subregisters, even if the datasheet chooses to ignore that
+term in explaining register 4.  The other (sub)registers are however implemented
+conforming the datasheet.</p>
+</div>
+</div>
+
+
+</body></html>

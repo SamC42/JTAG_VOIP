@@ -1,3 +1,4 @@
+#include <Wire.h>
 int p2  = 2;
 int p3  = 3;
 int p4  = 4;
@@ -19,7 +20,6 @@ int store9 = 0;
 int store10 = 0;
 int store11 = 0;
 
-
 // Generally, you should use "unsigned long" for variables that hold time
 // The value will quickly become too large for an char to store
 unsigned long previousMillis = 0;        // will store last time LED was updated
@@ -29,7 +29,7 @@ const long charerval = 1000;           // charerval at which to blink (milliseco
 
 
 void setup() {
-  // put your setup code here, to run once:
+  /* Serial Attempt
   Serial.begin(9600);
   pinMode(p2,INPUT);
   pinMode(p3,INPUT);
@@ -42,9 +42,19 @@ void setup() {
   pinMode(p10,INPUT);
   pinMode(p11,INPUT);
   unsigned long timer;
+  */
+  /*
+   * I2C Attempt
+   */
+  Wire.begin();
+  Serial.begin(9600);
+  
+
+   
 }
 
 void loop() {
+  /*SERIAL ATTEMPT
   if(Serial.available()){
   // put your main code here, to run repeatedly:
  // unsigned long currentMillis = millis();
@@ -76,14 +86,15 @@ void loop() {
       Serial.println("INcoming: " + incoming);
       //Serial.println(" Pin 11: " + store11);      
       //Serial.println();
-      //Serial.println();
-      
-      
+      //Serial.println();  
     }
-  
-  
-
-
+  */
+  /*
+   * I2c Attempt
+   * 
+   */
+  char c = Wire.read();
+  Serial.println(c);
   
 
 }
