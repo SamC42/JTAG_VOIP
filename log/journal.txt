@@ -1,0 +1,106 @@
+This file will server as the log/journal for the RBS project
+Times are approx.
+
+12/17/2016
+6:00pm - Got Package
+7:00pm - Emailed about Error in package, Ordered another Phone from Amazon, should be here friday
+7:15pm - Idea
+        - Use ssh access to get firmware image and use hint 4 to decode message
+7:52pm - Data
+	Boot: 1.0.1.1
+	Core: 1.0.2.5
+	Base: 1.0.2.19
+	Proj: 1.0.2.27
+	Locale: 1.0.2.9
+	Recovery: 1.0.2.12
+	MAC: 00:0B:82:7E:67:63
+	HW: V1.4A
+	P/N: 9620006314A
+	
+	IPv4: 192.168.0.16
+	IPv6: 0:0:0:0:206:82ff:fe7e:6763
+	Subnet Mask: 255.255.255.0
+	Gateway: 192.168.0.1
+	DNS1: 208.59.247.45
+	DNS2: 208.59.247.46
+	NTP: us.pool.ntp.org
+	
+	Inital Assesments: What is NTP, possibly reflash w/ JTAG?, check out IPv6 notation
+8:00pm
+	PORT 22/tcp open ssh
+	     80/tcp open http
+	Running: Linux 2.6.X|3.x
+	OS CPE: cpe:/o:linux:linux_kernel:2.6 cpe:/o:linux:linux_kernel:3
+	OS details: Linux 2.6.32 - 3.10
+8:16pm 
+	ssh admin@192.168.0.16 gained access
+		Options: config        - Configure the device
+			 status        - Show device status
+			 ps_status     - Show ps command output
+			 phone_status  - Show current phone basic status
+			 upgrade       - Upgrade the device
+			 reboot        - Reboot the device
+			 reset         - Factory Reset
+			 format mode   - Format user data partition
+				mode 0 - Reset User data
+			 link          - Show Ethernet link status
+			 help          - show this tezt
+			 audiotune     - Start Audio tuning tool 
+			 exit          - Exit command shell
+8:24pm - Downloaded Bin File from GrandStream Website (http://www.grandstream.com/support/firmware)
+          - Version 1.0.2.27
+8:43pm - Could potentionally get the firmware off of the phone, if it has been mod'd and compare to normal bin file, with binwalk -G
+
+9:00pm - output of binwalk -Y --Identify the CPU architecture of a file using the capstone disassembler
+	263 0x107 CPU - ARM executable code, 16-bit (Thumb), big endian, at least 500 valid instructions
+11:00pm 
+	-ssh uses Dropbear sshd 2013.58 (protocol 2.0) 
+		-known to have different time delays between failed logon attempst to detect what usernames are valid
+12:00am
+	-Get into Linux via ssh to get to root to check out ssh/admin/admin/hlm0mz
+	-Get into Linua via some other method
+12/18/2016
+7:00pm - Current Task will be to Exploit the ssh vulnerability 
+	CVE - 2013 - 4421 which states 'Error in buf_decompress when handling compressed payloads can be exploited to exhaust
+			                available memory resources by sending a speically crafted packet.
+	- Plan is to download dropbear ssh version .58 and .59 and attempt to exploit compression packet error
+12/19/2016
+7:19am - Plan is to read into scp/ssh/dropbear to learn as much as possible to exploit
+		CVE -2013 - 4421
+	Dropbear - 
+		- pty = pseudo-teletype - device
+		- scp on dropbear need to install (looks like phone has it )
+		- packet.c/line370 
+			- buf_decompress(buf,len) = decompress payload, resize output buffer
+				- uses zlib.net/zlib_tech.html
+					- compression method, ecapsulates DEFALTE data by adding a header & trailer
+8:00am - Broke out buf_decompress from packet.c to test buffer vulnerability
+		- Assumptions - the buffer refered to is what is being taken in from ssh & w/ the vulnerabilty it will
+				dump me out of the gradstream shell
+					- don't use -T
+                              - also to note the vul. only states that it can create a DOS but hopefully that will do the trick
+					
+		- expected results - it will all me to run code on the device
+		
+7:30pm
+	- Stopped trying to decompress packet.c
+	- tried a bit of brute force, going to look into why root@ for ssh stops at one password attempt
+	- heredoc tried
+9:00pm
+	- Attempting to get in via a serial port
+	- Also trying to look at maintenance mode somewhere on the machine
+	- DRAM = Zentel A353%%40GTP
+	- Processor ARM 926 
+	- SoC = DVF9918 
+
+02/22/2016
+8:53am
+	- Attempting still getting in via port holes located on pcb
+	- The DVF99 has:
+			2 usb
+			2 UART
+			SPI Master and SPI m/s
+			2 I2C buses
+	- Debug - JTAG-based debug port for both CPU's 
+		- CoreSight w/ Embedded Trace Macrocell 
+		- Maybe the pinout is a JTAG debug port

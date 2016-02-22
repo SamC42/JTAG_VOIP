@@ -1,0 +1,33 @@
+Hello! Welcome to your quest (and ~70% of your technical interview).
+
+In this box, you will find:
+*Mysetry (Grandstream GXP 1626)
+*Candy (Wonka Fundip!)
+
+Your quests, in no particulat order:
+*p3wn phone
+*decrypt message
+*follow instructions in message
+*eat candy
+
+You have 7 days.
+
+Hint 1: 
+ssh/admin/admin/hlm0mz
+
+Hint2: 
+You might want to do some soldering
+
+Hint 3: 
+Reflashing the firmware might destroy the message, so do it only if you think it's a good idea
+
+Hint 4: 
+K[ 0.. 3] := { 0xd76aa478, 0xe8c7b756, 0x242070db, 0xclbdceee }
+K[ 4.. 7] := { 0xf57c0faf, 0x4787c62a, 0xa8304613, 0xfd469501 }
+K[ 8..11] := { 0x698098d8, 0x8b44f7af, 0xffff5bb1, 0x895cd7be }
+K[12..15] := { 0x6b901122, 0xfd987193, 0xa679438e, 0x49b40821 }
+
+*1,700 bonus poinrs if you pull this off without voiding the warranty
+
+Happy hax0ring!
+-0xAC

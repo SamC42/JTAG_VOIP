@@ -1,0 +1,9 @@
+This folder holds zlib files but also: 
+
+
+Modified Packets (from Dropbear):
+
+packet.c
+packet.h
+
+Specifically the function in question in CVE - 2013 - 4421
