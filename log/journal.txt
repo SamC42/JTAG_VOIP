@@ -92,3 +92,15 @@ Times are approx.
 	- DRAM = Zentel A353%%40GTP
 	- Processor ARM 926 
 	- SoC = DVF9918 
+
+02/22/2016
+8:53am
+	- Attempting still getting in via port holes located on pcb
+	- The DVF99 has:
+			2 usb
+			2 UART
+			SPI Master and SPI m/s
+			2 I2C buses
+	- Debug - JTAG-based debug port for both CPU's 
+		- CoreSight w/ Embedded Trace Macrocell 
+		- Maybe the pinout is a JTAG debug port
