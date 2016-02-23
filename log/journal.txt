@@ -111,3 +111,21 @@ Times are approx.
 3:00pm
 	- Got a Raspberry Pi and attempting to make a JTAG debugger
 	
+6:40pm
+	- Gave up on JTAG - wounld need hardware to support, arduino really didnt work out,
+		neither did Raspberry Pi
+	- Attempting to analyze framework again
+8:15pm
+	- So going back to JTAG, it definitly is a JTAG conector, it has the soft had hard grounds
+	    and data on some of the correct pins, I could use a oscilliscope to analyze the
+	    time frame (clk) and signals & whatnot but I'm going to have to hope they are true to JTAG spec.
+	MILESTONES:
+	- 1. I plan to tighten up the Soldering points and get clear data coming from the TDO line
+	- 2. Once I have clear data I will modify the jtag bang program, which provides a solid base for interpretting JTAG
+	       to grab all the firmware data, once I have th 1's and 0's I can run it through a program
+	       to interpret the code into Assembly.
+	- 3. Once I have the Assembly I can figure
+	- 4. Extend the JTAG program to inject a breakpoint into the code when the SSH command runs,
+		this will stop the program from running the submenu and dump into bash
+	- 5. Profit and read hopefully whatever is in ssh/admin/admin/hlm0mz
+	- 6. Enjoy the fundip.
