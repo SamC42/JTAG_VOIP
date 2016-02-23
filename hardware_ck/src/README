@@ -1,0 +1,18 @@
+JTAG discovery:
+
+TDI - Test Data In
+TDO - Test Data Out
+TCK - Test CLK
+TMS - TMS
+TRST - Test Reset (optional)
+
+- Bits are passed via rising edge (NEED A OSCILLISCOPE!!!) of TCK
+* An FPGA would be ideal
+- Basically a state machine, run on the clock edge of Test, lets see
+	if the Arduino can handle it
+
+Plan:
+
+1. Create a MIPS Assemby instruction test script in binary
+2. Pass the binary to the Arduino JTAG program clocked at JTag speed
+3. Interpret
