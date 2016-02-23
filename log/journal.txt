@@ -129,3 +129,6 @@ Times are approx.
 		this will stop the program from running the submenu and dump into bash
 	- 5. Profit and read hopefully whatever is in ssh/admin/admin/hlm0mz
 	- 6. Enjoy the fundip.
+	IDEAL hardware:
+		- FPGA realized with verilog code, state machine for JTAG program
+		- Oscilliscope for testing clock edge

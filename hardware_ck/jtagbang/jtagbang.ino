@@ -12,10 +12,10 @@
 
 #define LED 13
               // ON Embeeded Board
-#define TMS 8  // 4   red
-#define TDI 9  // 3 - brown
-#define TDO 10 // 7   black
-#define TCK 11 // 5   white
+#define TMS 8  // 4   green1
+#define TDI 9  // 3 - blue
+#define TDO 10 // 7   green2
+#define TCK 11 // 5   orange
 
 // optional hardware flow control
 #define CTS 2   // connect this pin to the FTDI's CTS line
@@ -173,7 +173,7 @@ void enumdevs(void)
                 //     as the invalid manufacturer code, but i'm too
                 //     lazy to track when to insert the zeros, so let's
                 //     assume 1111 1111111 will not be used either.
-                break;
+                //break;
             }
 
             // read product code
