@@ -1,3 +1,7 @@
+dv99_sim - contains the Arduino source code writtent to interpret the JTAG information
+
+
+
 JTAG discovery:
 
 TDI - Test Data In
@@ -13,6 +17,7 @@ TRST - Test Reset (optional)
 
 Plan:
 
-1. Create a MIPS Assemby instruction test script in binary
-2. Pass the binary to the Arduino JTAG program clocked at JTag speed
+1. Create an ARM Assemby instruction test script in binary
+2. Pass the binary to the Arduino JTAG program clocked at TCK speed
 3. Interpret
+4. Set Breakpoints and insert code along JTAG line (Not Completed)
