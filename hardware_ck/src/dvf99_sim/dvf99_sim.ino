@@ -11,6 +11,8 @@
  *                          1. Arduino Pins are not written
  *                          2. Clock assumes we have buffered 16 bits from the TDO line
  *                             and are reading on a byte length clock
+ *                             
+ * Next Stage functionality is to set breakpoints by clocking TCK and inserting code
  * 
  * 
  */
