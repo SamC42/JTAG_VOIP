@@ -2,11 +2,26 @@
 
 ### This project took a look athe Grandstream VoIP phone and it's vulnerabilities###
 
-I ran through sever tests to gain access into the system, the last attempt being the most promising. I kept 
+I ran through sever tests to gain access into the system, the first attempt being the most promising. I kept 
 a journal of my thought process and progress located at log/journal.txt. I documented the Attempts below and
 added results of each test.
 
 ## Attempts: ##
+
+### Direct Connection Hardware Intrusion   ###
+
+Breaking open the phone I was able to see female headers on the board. After some discovery I noticed the 
+odd amount of GND on one side and determined the connection must be a JTAG connection. Without a JTAG connection
+I was unable to accurately see the signals coming from the DVF9918 which featured two ARM processors. I was able to
+discover some Arduino code to help in the process and was able to learn more about JTAG. 
+
+Since I was unable to accurately get 
+
+
+
+
+
+
 
 ###  Exploit the CVE - 2013 - 4421 Vulnerability ###
 
@@ -36,6 +51,7 @@ Results: Was able to break out the method and understand the compression relatin
 
 Results: I was able to see assembly instructions in the firmware but without stepping though the code I was unable
 	 to make heads or tails of it.
+
 
 
 
