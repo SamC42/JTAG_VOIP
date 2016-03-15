@@ -6,6 +6,8 @@ I ran through several tests to gain access into the system, the first attempt be
 a journal of my thought process and progress located at log/journal.txt. I documented the Attempts below and
 added results of each test.
 
+A more detailed description is available in log/GrandstreamVoIPGXP1610Research.pdf
+
 ## Attempts: ##
 
 ### Direct Connection Hardware Intrusion   ###
